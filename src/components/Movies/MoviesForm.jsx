@@ -42,7 +42,7 @@ const MoviesForm = () => {
       }else{
         await UpdateMovie(params.id, createmovie);
       }
-      navigate("/");
+      navigate("/movies");
     } catch (error) {
       console.log(error);
     }

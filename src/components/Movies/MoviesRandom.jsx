@@ -9,8 +9,9 @@ const MovieRamdon = () => {
     try {
       const res = await randomMovies();
       const data = await res.json();
-    
-      setRandom(data);
+      if (res.status !== 400 ){
+        setRandom(data)
+      };
    
     } catch (error) {
    
